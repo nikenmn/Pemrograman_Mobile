@@ -418,7 +418,7 @@ class MyApp extends StatelessWidget {
   }
 } */
 
-// Container G. Property Transform
+/* Container G. Property Transform
 import 'package:flutter/material.dart';
 
 void main() => runApp(MyApp());
@@ -432,8 +432,7 @@ class MyApp extends StatelessWidget {
           body: Container(
             decoration: BoxDecoration(
               image: const DecorationImage(
-                image: NetworkImage(
-                    'https://pixnio.com/free-images/2017/03/07/2017-03-07-10-59-39-900x600.jpg'),
+                image: AssetImage('assets/kerbau.jpg'),
                 fit: BoxFit.fitWidth,
               ),
               border: Border.all(
@@ -448,7 +447,7 @@ class MyApp extends StatelessWidget {
           )),
     );
   }
-} 
+} */
 
 /* Container H. Property Decoration
 import 'package:flutter/material.dart';
@@ -465,8 +464,7 @@ class MyApp extends StatelessWidget {
               decoration: BoxDecoration(
                 color: const Color(0xff7c94b6),
                 image: const DecorationImage(
-                  image: NetworkImage(
-                      'https://pixnio.com/free-images/2018/12/02/2018-12-02-19-17-12.jpg'),
+                  image: AssetImage('assets/alpaca.jpg'),
                   fit: BoxFit.fitWidth,
                 ),
                 border: Border.all(
@@ -480,7 +478,7 @@ class MyApp extends StatelessWidget {
               margin: EdgeInsets.all(20))),
     );
   }
-} */
+} 
 //END CONTAINER*/
 
 // COLUMN AND ROW
