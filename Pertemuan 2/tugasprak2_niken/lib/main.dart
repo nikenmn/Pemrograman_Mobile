@@ -59,28 +59,44 @@ class _MyHomePageState extends State<MyHomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        // TRY THIS: Try changing the color here to a specific color (to
-        // Colors.amber, perhaps?) and trigger a hot reload to see the AppBar
-        // change color while the other colors stay the same.
         backgroundColor: Theme.of(context).colorScheme.inversePrimary,
         // Here we take the value from the MyHomePage object that was created by
         // the App.build method, and use it to set our appbar title.
         title: Text(widget.title),
       ),
-      body: Container(
-        child: Container(
-            height: 80,
-            width: 600,
-            color: Colors.deepPurple,
-            child: Text(
-              'Coba',
-              style: TextStyle(fontSize: 20, color: Colors.white),
-            )),
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: _incrementCounter,
-        tooltip: 'Increment',
-        child: const Icon(Icons.add),
+      body: Center(
+        child: Column(
+          children: <Widget>[
+            Row(children: [
+              Container(
+                color: const Color.fromARGB(255, 201, 201, 201),
+                width: 205.5,
+                height: 50,
+                alignment: Alignment.center,
+                child: Text(
+                  'Halo',
+                  style: TextStyle(fontSize: 28),
+                ),
+              ),
+              Container(
+                color: const Color.fromARGB(255, 201, 201, 201),
+                width: 205.5,
+                height: 50,
+                alignment: Alignment.center,
+                child: Text(
+                  'Haloo',
+                  style: TextStyle(fontSize: 28),
+                ),
+              ),
+            ])
+          Stack(children: <Widget>[
+            Container(
+              color: Colors.blueGrey,
+              alignment: Alignment.center,
+              child: AssetImage(assetName),
+            )
+          ],)],
+        ),
       ), // This trailing comma makes auto-formatting nicer for build methods.
     );
   }
