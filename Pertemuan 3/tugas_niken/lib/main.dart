@@ -17,7 +17,7 @@ class MyApp extends StatelessWidget {
           seedColor: Color.fromARGB(212, 185, 148, 253),
         ),
         useMaterial3: true,
-        fontFamily: 'Rubikssssss',
+        fontFamily: 'Rubik',
       ),
       home: const MyHomePage(title: 'Somethinc For U'),
       debugShowCheckedModeBanner: false,
