@@ -1,12 +1,14 @@
+import 'package:flutter/material.dart';
+
 class Item {
   String name;
   int price;
-  String imagePath;
   String desc;
+  AssetImage img;
 
   Item(
       {required this.name,
       required this.price,
-      required this.imagePath,
-      required this.desc});
+      required this.desc,
+      required this.img});
 }
