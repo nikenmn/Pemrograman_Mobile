@@ -6,17 +6,17 @@ class HomePage extends StatelessWidget {
   final List<Item> items = [
     Item(
         name: 'Skintific MSH Niacinamide Moisture Gel',
-        price: 130000,
+        price: 10,
         img: AssetImage('assets/images/skintific.jpg'),
         desc: 'Moisturizer'),
     Item(
         name: 'Esqa Mauve Eyeshadow Pallete',
-        price: 120000,
+        price: 14,
         img: AssetImage('assets/images/esqa.jpg'),
         desc: 'Make-up'),
     Item(
         name: 'COSRX Snail Mucin Essense',
-        price: 199000,
+        price: 15,
         img: AssetImage('assets/images/W1_BJ_Artikel_COSRX_Snail_essence.jpg'),
         desc: 'essence')
   ];
