@@ -7,17 +7,17 @@ class HomePage extends StatelessWidget {
     Item(
         name: 'Skintific MSH Niacinamide Moisture Gel',
         price: 130000,
-        img: AssetImage('assets/images/skintific-niacin.jpg'),
-        desc: 'Moisturiser'),
+        img: AssetImage('assets/images/skintific.jpg'),
+        desc: 'Moisturizer'),
     Item(
         name: 'Esqa Mauve Eyeshadow Pallete',
         price: 120000,
-        img: AssetImage('assets/images/esqa-mauve.jpg'),
+        img: AssetImage('assets/images/esqa.jpg'),
         desc: 'Make-up'),
     Item(
         name: 'COSRX Snail Mucin Essense',
         price: 199000,
-        img: AssetImage('assets/images/Cosrx-Snail-Mucin-Essence-Review.jpg'),
+        img: AssetImage('assets/images/W1_BJ_Artikel_COSRX_Snail_essence.jpg'),
         desc: 'essence')
   ];
 
