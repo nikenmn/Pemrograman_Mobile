@@ -86,4 +86,8 @@ class DbHelper {
     }
     return _database;
   }
+
+  getAllItem() {}
+
+  deleteItem(int i) {}
 }
