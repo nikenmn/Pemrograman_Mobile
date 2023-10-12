@@ -1,6 +1,6 @@
 {
-    "name": "tugas_prak7",
-    "short_name": "tugas_prak7",
+    "name": "restapi",
+    "short_name": "restapi",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

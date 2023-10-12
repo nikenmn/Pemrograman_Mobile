@@ -1,16 +1,7 @@
-# tugas_prak7
+# BAB 7 HTTP Request
 
-A new Flutter project.
+## Niken Maharani Permata / 2141762006 - SIB 3E - 19
 
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Hasil Tampilan Layar
+![Berikut tampilan hasil Tugas Praktikum 7](images/1.PNG "Hasil Tampilan Tugas Praktikum 7")
+![Berikut tampilan hasil Tugas Praktikum 7](images/2.PNG "Hasil Tampilan Tugas Praktikum 7")
