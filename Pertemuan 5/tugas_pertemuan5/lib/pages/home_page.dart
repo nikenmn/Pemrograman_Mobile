@@ -27,7 +27,7 @@ class HomePage extends StatelessWidget {
       appBar: AppBar(
         title: Text("Skincare Collection by Niken"),
         backgroundColor: Color.fromARGB(255, 7, 75, 107),
-        actions: <Widget>[Image.asset('images/assets/girl.png')],
+        actions: <Widget>[Image.asset('assets/images/girl.png')],
       ),
       body: Container(
         // margin: EdgeInsets.all(8),

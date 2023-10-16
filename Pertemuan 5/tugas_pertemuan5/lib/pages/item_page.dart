@@ -11,7 +11,7 @@ class ItemPage extends StatelessWidget {
       appBar: AppBar(
         title: Text('Detail Item'),
         backgroundColor: Color.fromARGB(255, 149, 195, 255),
-        actions: <Widget>[Image.asset('images/assets/logo.png')],
+        actions: <Widget>[Image.asset('assets/images/girl.png')],
       ),
       body: Container(
         margin: EdgeInsets.all(8),
