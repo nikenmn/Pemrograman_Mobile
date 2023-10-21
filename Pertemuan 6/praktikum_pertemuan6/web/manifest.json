@@ -1,6 +1,6 @@
 {
-    "name": "praktikum_pertemuan6",
-    "short_name": "praktikum_pertemuan6",
+    "name": "database_sqlite",
+    "short_name": "database_sqlite",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",

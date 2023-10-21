@@ -1,33 +1,32 @@
+// ignore_for_file: unnecessary_this, prefer_collection_literals
+
 class Item {
-  late int _id;
-  late String _name;
-  late int _price;
+  int? _id;
+  String nama = "";
+  int pricing = 0;
 
-  int get id => _id;
+  int? get id => _id;
+  String get name => nama;
+  set name(String value) => nama = value;
+  int get price => pricing;
+  set price(int value) => pricing = value;
 
-  String get name => this._name;
-  set name(String value) => this._name = value;
+  Item(this.nama, this.pricing);
 
-  get price => this._price;
-  set price(value) => this._name = value;
-
-  // konstruktor versi 1
-  Item(this._name, this._price);
-
-  //konstruktor versi 2
   Item.fromMap(Map<String, dynamic> map) {
-    this._id = map['id'];
-    this._name = map['name'];
-    this._price = map['price'];
+    _id = map['id'];
+    nama = map['name'];
+    pricing = map['price'];
   }
 
-  //konversi dari item ke Map
   Map<String, dynamic> toMap() {
-    Map<String, dynamic> map = Map<String, dynamic>();
-
-    map['id'] = this._id;
-    map['name'] = name;
-    map['price'] = price;
+    Map<String, dynamic> map = {
+      'name': nama,
+      'price': pricing,
+    };
+    if (_id != null) {
+      map['id'] = _id;
+    }
     return map;
   }
 }

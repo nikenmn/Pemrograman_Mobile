@@ -1,8 +1,24 @@
-# praktikum_pertemuan6
+# Pertemuan 6
 
 A new Flutter project.
 
-## Getting Started
+## Hasil Tampilan Project
+
+### Awal Tampilan
+![Tampilan Layar Utama](images/ss1.png)
+
+### Tambah Barang
+![Tampilan Layar](images/ss2.png)
+![Tampilan Layar](images/ss2-2.png)
+
+### Edit Barang
+![Tampilan Layar](images/ss3.png)
+![Tampilan Layar](images/ss4.png)
+
+### Tambah lalu Hapus
+![Tampilan Layar](images/ss5.png)
+![Tampilan Layar](images/ss6.png)
+![Tampilan Layar](images/ss7.png)
 
 This project is a starting point for a Flutter application.
 

@@ -1,56 +1,49 @@
-// ignore_for_file: depend_on_referenced_packages
+// ignore_for_file: prefer_conditional_assignment, unnecessary_null_comparison, unnecessary_this, non_constant_identifier_names, prefer_interpolation_to_compose_strings
 
 import 'package:sqflite/sqflite.dart';
 import 'dart:async';
 import 'dart:io';
 import 'package:path_provider/path_provider.dart';
-import '../model/item.dart';
+import 'model/item.dart';
 
 class DbHelper {
-  static DbHelper _dbHelper = DbHelper._internal();
-  static Database? _database;
+  static DbHelper? _dbHelper_niken;
+  static Database? _database_niken;
+
   DbHelper._createObject();
 
-  DbHelper._internal();
-
   Future<Database> initDb() async {
-    //untuk menentukan nama database dan lokasi yg dibuat
     Directory directory = await getApplicationDocumentsDirectory();
     String path = directory.path + 'item.db';
 
-    //create, read databases
-    var itemDatabase = openDatabase(path, version: 4, onCreate: _createDb);
+    var itemDatabase =
+        await openDatabase(path, version: 4, onCreate: _createDb);
 
-    //mengembalikan nilai object sebagai hasil dari fungsinya
     return itemDatabase;
   }
 
-  //buat tabel baru dengan nama item
   void _createDb(Database db, int version) async {
     await db.execute('''
- CREATE TABLE item (
- id INTEGER PRIMARY KEY AUTOINCREMENT,
- name TEXT,
- price INTEGER
- )
- ''');
+      CREATE TABLE item (
+        id INTEGER PRIMARY KEY AUTOINCREMENT,
+        name TEXT,
+        price INTEGER
+      )
+    ''');
   }
 
-//select databases
   Future<List<Map<String, dynamic>>> select() async {
     Database db = await this.initDb();
     var mapList = await db.query('item', orderBy: 'name');
     return mapList;
   }
 
-//create databases
   Future<int> insert(Item object) async {
     Database db = await this.initDb();
     int count = await db.insert('item', object.toMap());
     return count;
   }
 
-//update databases
   Future<int> update(Item object) async {
     Database db = await this.initDb();
     int count = await db
@@ -58,7 +51,6 @@ class DbHelper {
     return count;
   }
 
-//delete databases
   Future<int> delete(int id) async {
     Database db = await this.initDb();
     int count = await db.delete('item', where: 'id=?', whereArgs: [id]);
@@ -68,7 +60,7 @@ class DbHelper {
   Future<List<Item>> getItemList() async {
     var itemMapList = await select();
     int count = itemMapList.length;
-    List<Item> itemList = List<Item>();
+    List<Item> itemList = [];
     for (int i = 0; i < count; i++) {
       itemList.add(Item.fromMap(itemMapList[i]));
     }
@@ -76,20 +68,16 @@ class DbHelper {
   }
 
   factory DbHelper() {
-    if (_dbHelper == null) {
-      _dbHelper = DbHelper._createObject();
+    if (_dbHelper_niken == null) {
+      _dbHelper_niken = DbHelper._createObject();
     }
-    return _dbHelper;
+    return _dbHelper_niken!;
   }
 
-  Future<Database?> get database async {
-    if (_database == null) {
-      _database = await initDb();
+  Future<Database> get database async {
+    if (_database_niken == null) {
+      _database_niken = await initDb();
     }
-    return _database;
+    return _database_niken!;
   }
-
-  getAllItem() {}
-
-  deleteItem(int i) {}
 }
